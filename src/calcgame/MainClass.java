@@ -15,10 +15,10 @@ public class MainClass {
 		System.out.println("연산 게임 시작");
 		Calc cc = new Calc();
 
-		// 사용자가 생성할 문제 수를 입력
+		// 문제 수 사용자 지정
 		cc.inputN();
 
-		// 문제 생성(사용자가 지정한 수 만큼)
+		// 사용자 지정 수만큼 문제 생성
 		ArrayList<MunjeDto> mList = cc.makeMunje();
 
 		// 문제 출력하고 정답입력 정답비교
@@ -26,6 +26,8 @@ public class MainClass {
 
 			System.out.println(dto.toString());
 			cc.checkDab(cc.userDab(), dto.getDab());
+			
+		// 종료 기능 추가 필요
 			
 		}
 	}
